@@ -1,0 +1,21 @@
+#brand-argen,
+#brand-top {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#brand-argen {
+    color: #00bfff; /* Color blanco */
+}
+
+#brand-top {
+    color: white; /* Color celeste */
+}
+
+p {
+    padding: 0 1rem;
+}
+
+#bm-space {
+    margin-bottom: 2rem;
+}

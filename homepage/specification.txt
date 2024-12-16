@@ -1,0 +1,3 @@
+Html 10 tags: nav, main, div, h1, hr, img, p, a, button, span
+Css 5 properties: font-size, font-weight, color, padding, margin-bottom
+Use of Javascript and Bootstrap: I use Javascript for the "Go Back" button and bootstrap for almost all the styling.
