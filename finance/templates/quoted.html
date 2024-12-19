@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %} Quoted {% endblock %}
+
+{% block main %}
+    <h1 class="h1">{{ quote.name }}</h1>
+    <hr class="w-50 mx-auto mt-4 mb-4" />
+    <table class="table table-bordered w-50 mx-auto">
+        <tr>
+            <td>{{ quote.symbol }}</td>
+            <td>{{ "$ " + quote.price|string }}</td>
+        </tr>
+    </table>
+{% endblock %}

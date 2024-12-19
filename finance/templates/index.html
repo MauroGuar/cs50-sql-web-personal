@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block title %} Index {% endblock %}
+{% block main %}
+    <div class="container"></div>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for stock in stocks %}
+            <tr>
+                <td>{{ stock["symbol"] }}</td>
+                <td>{{ stock["shares"] }}</td>
+                <td>{{ stock["price"] }}</td>
+                <td>{{ (stock["shares"] * stock["price"])|round(4) }}</td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="3" class="td-total">CASH</td>
+            <td>{{ cash|round(4) }}</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="td-total">TOTAL</td>
+            <td>{{ total|round(4) }}</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <a href="/deposit" class="btn btn-primary">Add Funds</a>
+{% endblock %}

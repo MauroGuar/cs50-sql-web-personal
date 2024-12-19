@@ -189,3 +189,5 @@ fiftyville/fiftyville.db
 songs/songs.db
 movies/movies.db
 birthdays/birthdays.db
+finance/finance.db
+finance/requirements.txt

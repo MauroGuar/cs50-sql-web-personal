@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %} History {% endblock %}
+{% block main %}
+<div class="container mt-4">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Type</th>
+                <th scope="col">Symbol</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for trs in transactions %}
+            <tr>
+                <td>{{ trs["type"] }}</td>
+                <td>{{ trs["symbol"] }}</td>
+                <td>{{ trs["shares"] }}</td>
+                <td>{{ trs["price"] }}</td>
+                <td>{{ trs["timestamp"] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

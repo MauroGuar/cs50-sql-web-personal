@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "finance"
+version = "0.0.1"
+description = "Harvard CS50X exercise"
+authors = ["MauroGuar"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+cs50 = "^9.4.0"
+flask = "^3.1.0"
+flask-session = "^0.8.0"
+pytz = "^2024.2"
+requests = "^2.32.3"
+coloredlogs = "^15.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
